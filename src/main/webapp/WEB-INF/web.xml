@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+         http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+
+  <servlet>
+  <servlet-name>menuinsert</servlet-name>
+  <servlet-class>com.menu.MenuInsert</servlet-class>  
+  </servlet> 
+    <servlet-mapping>
+  <servlet-name>menuinsert</servlet-name>
+  <url-pattern>/insert</url-pattern>
+  </servlet-mapping>  
+  
+  <servlet>
+  <servlet-name>updatemenu</servlet-name>
+  <servlet-class>com.menu.UpdatemenuServlet</servlet-class>
+  </servlet>  
+  <servlet-mapping>
+  <servlet-name>updatemenu</servlet-name>
+  <url-pattern>/update</url-pattern>
+  </servlet-mapping>  
+  
+   <servlet>
+  <servlet-name>deletemenu</servlet-name>
+  <servlet-class>com.menu.DeletemenuServlet</servlet-class>
+  </servlet>  
+  <servlet-mapping>
+  <servlet-name>deletemenu</servlet-name>
+  <url-pattern>/delete</url-pattern>
+  </servlet-mapping>  
+  
+  
+         
+         
+         
+</web-app>
